@@ -13,3 +13,8 @@ When to use:
 Command:
 
 ~]$ git pull origin main
+(Fetches main from origin and merges it into your current branch.)
+
+Effect:
+◼ Your local branch is updated with the remote changes.
+◼ May result in merge conflicts if your local changes clash with remote changes.
