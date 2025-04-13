@@ -18,3 +18,8 @@ Command:
 Effect:
 ◼ Your local branch is updated with the remote changes.
 ◼ May result in merge conflicts if your local changes clash with remote changes.
+
+Which One Should You Use?
+🖥 Use git pull when:
+✔ You’re sure the remote changes won’t conflict with yours.
+✔ You want a quick update without manual merging.
