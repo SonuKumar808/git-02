@@ -11,13 +11,30 @@ When to use:
 ◼ When you trust the remote changes and don’t need to review them first.
 
 Command:
-
 ~]$ git pull origin main
 (Fetches main from origin and merges it into your current branch.)
 
 Effect:
 ◼ Your local branch is updated with the remote changes.
 ◼ May result in merge conflicts if your local changes clash with remote changes.
+
+
+
+2. git fetch
+------------
+What it does:
+◼ Downloads the latest changes (commits, branches, tags) from the remote repository but does not merge them into your local branches.
+◼ Updates your remote-tracking branches (e.g., origin/main) but leaves your local branches (e.g., main) unchanged.
+
+When to use:
+◼ When you want to check what changes are available in the remote before merging them.
+◼ When you need to review changes before applying them.
+
+Command:
+~]$ git fetch origin
+(Fetches updates from the origin remote.)
+
+
 
 Which One Should You Use?
 🖥 Use git pull when:
