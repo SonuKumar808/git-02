@@ -41,9 +41,6 @@ Effect:
 ~]$ git diff main origin/main  # Compare local and remote
 
 
-
-
-
 Which One Should You Use?
 🖥 Use git pull when:
 ✔ You’re sure the remote changes won’t conflict with yours.
@@ -52,3 +49,78 @@ Which One Should You Use?
 🖥 Use git fetch when:
 ✔ You want to see what’s changed before merging.
 ✔ You’re working on a shared branch and need to avoid surprises.
+
+_______________________________________________________________________________________________________________________________________
+
+Git Commands:
+=============
+
+1. git init
+-----------
+◼ Purpose: Initialize a new git repository in the current directory
+◼ Usage: we run this command in a project folder to convert it into a git repository. It creates a .git directory where git stores all its configuration files and version history.
+◼ Ex: git init
+
+
+2. git status
+-------------
+◼ Purpose: Shows the current status of the working directory and staging area.
+◼ Usage: This command is used to check whether there are any modified, added, or deleted files in the working directory that need to be staged or committed.
+◼ Ex: git status
+
+
+3. git add
+----------
+◼ Purpose: Add files or changes to the staging area (index) in the preparation for a commit.
+◼ Usage: You specify the files to add or use a wildcard (e.g., git add . to add all files).
+◼ Ex: git add test.txt
+
+
+4. git commit
+-------------
+◼ Purpose: Commits the staged files to the local repository, saving your changes along with a commit message.
+◼ Usage: This records your staged changes and adds them the local repository's history.
+◼ Ex: git commit -m "commit message describing changes"
+
+
+5. git push
+-----------
+◼ Purpose: Pushes the committed changes from local repository to the central repository (remote repo like Github).
+◼ Usage: After commiting locally, use this to share your changes with others by sending them to the central repository.
+
+
+6. git restore
+--------------
+◼ Purpose: Used to undo changes in the working directory and the staging area.
+◼ Usage: If a file is unstaged, git restore will discard local changes made to that file.
+◼ Ex: git restore test.txt --> Unstage a staged file (without discarding changes)
+      git restore --staged test.txt
+
+
+7. git log
+----------
+◼ Purpose: Displays the commit history, including commit Id's, author information, dates and commit message.
+◼ Usage: This is useful to view the history of changes made to the project.
+◼ Ex: 
+   git log 
+--> to view a simpler summary, you can add options:
+   git log --oneline
+
+
+8. git rm
+---------
+◼ Purpose: Removes a file from both the working directory and the staging area, and it schedules the deletion for the next commit.
+◼ Usage: If you want to delete a file, this command removes it and stages the change for the commit.
+◼ Ex:
+    git rm file_name.txt
+    git commit -m "removed test.txt"
+    git push origin main
+
+
+9. git clone
+------------
+◼ Purpose: Downloads a copy of an existing git repository (usually from a remote central repository) to your local system.
+◼ Usage: This command is typically used when you want to start working on an existing project and need a copy of the central repository on your machine.
+◼ Ex:
+git clone https://github.com/username/repository.git
+
