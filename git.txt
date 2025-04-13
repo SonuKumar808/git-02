@@ -34,9 +34,21 @@ Command:
 ~]$ git fetch origin
 (Fetches updates from the origin remote.)
 
+Effect:
+◼ Your local repo now knows about remote changes, but your working directory remains unchanged.
+◼ You can inspect changes using:
+~]$ git log origin/main  # See what's new in the remote branch
+~]$ git diff main origin/main  # Compare local and remote
+
+
+
 
 
 Which One Should You Use?
 🖥 Use git pull when:
 ✔ You’re sure the remote changes won’t conflict with yours.
 ✔ You want a quick update without manual merging.
+
+🖥 Use git fetch when:
+✔ You want to see what’s changed before merging.
+✔ You’re working on a shared branch and need to avoid surprises.
