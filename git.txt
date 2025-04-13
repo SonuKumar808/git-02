@@ -1,0 +1,15 @@
+1. git pull
+-----------
+What it does:
+◼ Fetches changes from the remote and automatically merges them into your current local branch.
+
+Equivalent to running:
+~]$ git fetch && git merge origin/branch-name
+
+When to use:
+◼ When you want to directly update your local branch with the latest remote changes.
+◼ When you trust the remote changes and don’t need to review them first.
+
+Command:
+
+~]$ git pull origin main
